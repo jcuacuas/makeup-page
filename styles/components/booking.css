@@ -1,0 +1,248 @@
+.booking__title {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.inquiry__seperator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inquiry__seperator {
+    width: 20%;
+    height: 1px;
+    background-color: var(--color-muted);
+}
+
+.inquiry__symbol {
+  position: relative;
+  width: 178px;
+  height: 100px;
+}
+
+.inquiry__symbol:before,
+.inquiry__symbol:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 42px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #cbd5e1;
+  border-radius: 50px 50px 0 50px;
+  transform: rotate(-45deg);
+}
+
+.inquiry__symbol:after {
+  left: auto;
+  right: 45px;
+  border-radius: 50px 50px 50px 0;
+  transform: rotate(45deg);
+}
+
+.booking__container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.booking__agreement-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 1rem 0;
+}
+
+.booking__agreement-title strong {
+    font-weight: 700;
+}
+
+.booking__agreement {
+    /* Use multi-column layout to flow items vertically and avoid row alignment gaps */
+    width: 80%;
+}
+
+.agreement__item {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 0 0 0.25rem; /* small vertical spacing */
+    break-inside: avoid; /* keep items from breaking between columns */
+}
+
+.agreement__img {
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.booking__grid-container {
+    display: flex;
+    margin: 2rem auto;
+    align-items: center;    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    max-width: 1200px;
+}
+
+.booking__option-container {
+    width: 500px;
+    height: 850px;
+    color: #4a3b3d;
+}
+
+.booking__title-container {
+    margin: 2rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.booking__img {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.booking__option-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.booking__option-select {
+    padding: 12px 60px;
+    margin-top: 1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    border: 1px solid black;
+    transition: color 0.5s ease-in-out,
+                background-color 0.5s ease-in-out;
+}
+
+.booking__option-select:hover {
+    color: white;
+    background-color: black;
+}
+
+.booking__description {
+    font-family: var(--font-secondary);
+    color: #4a3b3d;
+    margin: 1rem 0;
+    font-size: var(--size-xl);
+}
+
+.booking__price-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.class__description-container {
+    max-width: 80ch;
+}
+
+.class__option-container {
+    margin: 6rem auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 2rem;
+}
+
+.class__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.class__title {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.class__price-container {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.class__img {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    width: 500px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.class__description {
+    color: #4a3b3d;
+    font-size: var(--size-xl);
+    margin: 0.5rem;
+}
+
+.class__items {
+    list-style-position: inside;
+    font-size: var(--size-xl);
+}
+
+.booking__price, 
+.booking__duration {
+    color: black;
+}
+
+.booking__price {
+    border-right: 1px solid black;
+    padding-right: 1rem;
+}
+
+.booking__duration {
+    padding-left: 1rem;
+}
+
+/* Booking image reveal transitions */
+.booking__img,
+.agreement__img,
+.class__img {
+    /* start hidden and slightly shifted for a subtle reveal */
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 650ms cubic-bezier(.22,.9,.36,1), transform 650ms cubic-bezier(.22,.9,.36,1);
+    will-change: opacity, transform;
+}
+
+/* When the image is in view, reveal it */
+.booking__img.in-view,
+.agreement__img.in-view,
+.class__img.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.booking__img--broken,
+.agreement__img--broken,
+.class__img--broken {
+    opacity: 1;
+    filter: grayscale(1) contrast(.95);
+}

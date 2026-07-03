@@ -1,17 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> AGM Makeup </title>
-    <link rel="stylesheet" href="./styles/modern-normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/modern normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/mobile nav.css">
+    <link rel="stylesheet" href="./styles/components/hero.css">
+    <link rel="stylesheet" href="./styles/components/pricing.css">
+    <link rel="stylesheet" href="./styles/components/about.css">
+    <link rel="stylesheet" href="./styles/components/testimonial.css">
+    <link rel="stylesheet" href="./styles/components/gallery.css">
+    <link rel="stylesheet" href="./styles/components/services.css">
+    <link rel="stylesheet" href="./styles/components/cta.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <title>AGM</title>
+    <meta name="description" content="Makeup Artist" />
+    <meta name="keywords" content="css, javascript, reactjs, nextjs" />
+    <meta name="author" content="Cuacuas" />
 </head>
 <body>
+    <header class="header">
+        <div class="header__title-container">
+            <img src="./public/image0-transparent.jpeg" style="width: 80px;">
+            <!-- <span class="header__title"> AGM </span> -->
+        </div>
+        <button class="header__bars" aria-label="menu button">
+            <svg 
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+        <nav class="header__menu">
+            <a href="./index.html" class="header__nav-link">Home</a>
+            <a href="#testimonials" class="header__nav-link">Testimonials</a>
+            <a href="./gallery.html" class="header__nav-link">Gallery</a>
+            <a href="./booking.html" class="header__nav-link">Services</a>
+            <a href="./inquiry.html" class="header__nav-link">Inquiry</a>
+            <div class="header__seperator"></div>
+            <div class="header__social-container">
+                <a 
+                title="youtube"
+                aria-label="youtube link"
+                href="https://www.instagram.com/agmmakeupartistry/" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social">
+                <i aria-hidden="true" class="lni lni-instagram"></i>
+                </a>  
+            </div>
+            <div class="header__social-container">
+                <a 
+                title="tiktok"
+                aria-label="tiktok link"
+                href="https://www.tiktok.com/@abileneemarin" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social">
+                <i aria-hidden="true" class="lni lni-tiktok"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="mobile-nav__close-btn">Close</button>
+        <img 
+        src="./public/logo.png" 
+        alt="Girl holding a cup of coffee" 
+        width="720" 
+        height="972" 
+        class="mobile-nav__logo" />
+        <div class="mobile-nav__social-container">
+            <a 
+            title="github"
+            aria-label="github link"
+            href="htttps://github.com" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile__social">
+            <i aria-hidden="true" class="lni lni-github-original"></i>
+            </a>
+            <a 
+            title="discord"
+            aria-label="discord link"
+            href="htttps://discord.com" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile__social">
+            <i aria-hidden="true" class="lni lni-discord-alt"></i>
+            </a>
+            <a 
+            title="youtube"
+            aria-label="youtube link"
+            href="htttps://youtube.com" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile__social">
+            <i aria-hidden="true" class="lni lni-youtube"></i>
+            </a>
+        </div>
+        <div class="mobile-nav__seperator"></div>
+        <a href="#" class="mobile-nav__sign-in-btn">Sign In</a>
+        <a href="#" class="btn mobile-nav__enter-app-btn">Enter app
+            <svg  aria-hidden="true" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" fill="currentColor" 
+            class="mobile-nav__enter-app-btn__arrow">
+                <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 
+                1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+        </a>
+    </div>
+    <main>
+        <section class="hero">
+        <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./public/index/image1.jpeg" style="width:100%; object-position: 0 -150px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image8.jpg" style="width:100%; object-position: 0 -150px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image2.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image6.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image9.jpg" style="width:100%; object-position: 0 -150px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="./public/index/image10.jpeg" style="width:100%; object-position: 0 -1900px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image3.jpeg" style="width:100%; object-position: 0 -600px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image4.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image5.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/index/image7.jpeg" style="width:100%">
+        </div>
+
+      </div>
+
+    <div class="slideshow-dots" style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+
+
+    </div>
+        </section>
+        <section id="about" class="about container section">
+
+            <div class="about__container">
+                <div class="about__item1">
+                    <h2 class="about__title">Meet Your Makeup Artist</h2>
+                    <p class="about__description1">
+                        Hi, Im Abilene. I’m a 25-year-old makeup artist with a lifelong passion for beauty and makeup. I was always the girl in school with a full face of makeup and doing her makeup whenever I had the chance! My journey began during my junior year of high school, and although I took a break after becoming a mom to my two beautiful boys, I returned more motivated and inspired than ever.
+                    </p>
+                    <p class="about__description2" style="font-size: 1.75rem; max-width: 40ch;">
+                        I believe makeup should enhance who you are—not change you—and I’m honored to be a part of your special moments.
+                    </p>
+                </div>
+                <img src="public/about-me-pic.JPEG" alt="Picture of Abilene" class="about__image">
+            </div>
+        </section>
+            <div class="about__container2">
+                <img src="public/prof_image3.jpeg" alt="Picture of Abilene" class="about__image--mobile">
+                <div class="about__seperator--mobile"></div>
+                <div class="about__item2">
+                    <h2 class="about__title2">My Artistry</h2>
+                    <p class="about__description3">
+                        Based in the Hudson Valley, New York, I proudly travel to serve my clients wherever they’re celebrating. I specialize in bridal glam, soft glam, full glam, and creative makeup looks, tailoring each service to enhance your natural beauty while bringing your vision to life.
+
+                        With over 14 years of passion for makeup artistry, my goal is to create a personalized and enjoyable experience that leaves you feeling confident, beautiful, and truly yourself. Whether you’re preparing for your wedding day, a special event, or a photoshoot, I will ensure you love every detail of your look.
+                    </p>
+                </div>
+            </div>
+        <section id="testimonials" class="testimonial container section">
+            <h2 class="testimonial__title">Testimonials</h2>
+            <p class="testimonial__description">
+                Just a handful of lovely comments out of my many beautiful clients.
+            </p>
+            <div class="testimonial__container">
+                <div class="testimonial__box testimonial__box--0margin">
+                    <p class="testimonial__comment">I’ve been getting my makeup done by her for many special occasions,
+                         and every experience has been amazing. She is incredibly sweet, professional, and truly passionate about her work.
+                         She always makes me feel comfortable and beautiful, and her attention to detail is unmatched.
+                         I highly recommend her to anyone looking for a talented makeup artist.
+                         Whenever I get the opportunity to share her work, I always tell others to book with her , you won’t be disappointed!
+                    </p>
+                    <p class="testimonial__name">- Leslie</p>
+                </div>
+                <div class="testimonial__box">
+                    <p class="testimonial__comment">Hey girl! I just wanted to say I am reminiscing my wedding makeup. 
+                        Thank you for making me look beautiful on my wedding day. 
+                        It stayed on alllll night and I received so many compliments!
+                    </p>
+                    <p class="testimonial__name">- Lucy</p>
+                </div>
+                <div class="testimonial__box">
+                    <p class="testimonial__comment">Girl just wanted to say, the makeup ATE!
+                    lasted all night and
+                    through my tears lol my sisters too we loved it thanks so much if there's anywhere I can review let me know!
+                    </p>
+                    <p class="testimonial__name">- Giselle</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section container">
+            <h2 class="cta__title">
+                Book your consultation today!
+            </h2>
+            <p class="cta__description">
+                You're a one step close to your dream glam. Book your <strong>free consultation</strong> today and let's create a personalized makeup look that enhances your natural beauty and makes you feel confident and radiant for your special day!
+            </p>
+            <a href="./inquiry.html" class="btn header__enter-app-btn">Book Now
+                <svg  aria-hidden="true" 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" fill="currentColor" 
+                class="header__enter-app-btn__arrow">
+                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 
+                    7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 
+                    0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </section>
+    </main>
+    <footer class="container section">
+        <p class="footer__description">
+            ~Makeup By Abilene~
+        </p>
+    </footer>
+    <script src="./source/app.js" type="module"></script>
 </body>
-<footer>
-</footer>
-<script type="module" src="./src/main.js">
-</script>
 </html>

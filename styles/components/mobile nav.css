@@ -1,0 +1,69 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark);
+    z-index: 9;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-nav__logo {
+    width: var(--size-7xl);
+    height: var(--size-7xl);
+    object-fit: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.mobile-nav__social-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-nav__social {
+    font-size: var(--size-lg);
+    color: var(--color-slate50);
+    line-height: 0;
+    text-decoration: none;
+}
+
+.mobile-nav__seperator {
+    border: 1px solid var(--color-slate800);
+    padding-right: 1.5rem;
+}
+
+.mobile-nav__sign-in-btn {
+    font-family: var(--font-secondary);
+    font-size: var(--size-xs);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.mobile-nav__enter-app-btn {
+    font-size: var(--size-xs);
+}
+
+.mobile-nav__enter-app-btn__arrow {
+    width: 1em;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+.mobile-nav__close-btn {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-family: var(--font-secondary);
+    color: var(--color-text);
+    font-size: var(--size-sm);
+    text-transform: uppercase;
+}

@@ -1,0 +1,169 @@
+.hero {
+    text-align: center;
+}
+
+.hero > * + * {
+    margin-top: 1rem;
+}
+
+.hero__image {
+    width: var(--size-9xl);
+    height: var(--size-9xl);
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+.hero__title {
+    font-size: var(--size-3xl);
+    font-weight: 900;
+    line-height: 1;
+    text-align: center
+}
+
+.hero__description1 {
+    font-family: var(--font-secondary);
+    font-size: var(--size-sm);
+    color: var(--color-muted);
+}
+
+.hero__description2 {
+    font-size: var(--size-sm);
+    color: var(--color-muted);
+}
+
+.hero__btn {
+    font-size: var(--size-sm);
+}
+
+.hero__br {
+    display: none;
+}
+
+.slideshow-container {
+  max-height: 100vh;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.mySlide {
+    display: none;
+}
+
+.dot {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 7px;
+  width: 80px;
+  margin: 0 2px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0;
+  background-color: #717171;
+  transition: width 0.6s ease;
+  transform-origin: left center;
+}
+
+.dot.active::before {
+  width: 100%;
+}
+
+.slideshow-dots {
+  position: relative;
+  bottom: 70px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+@media (min-width: 475px) {
+    .hero__image {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+
+    .hero__title {
+        font-size: var(--size-4xl);
+    }
+
+    .hero__description1,
+    .hero__description2 {
+        font-size: var(--size-base);
+    }
+
+    .hero__btn {
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 640px) {
+    .hero__br {
+        display: block;
+    }
+
+    .hero__description1 {
+        max-width: 65ch;
+        letter-spacing: -0.05em;
+        margin-inline: auto;
+    }
+
+    .hero__description2 {
+        max-width: 57ch;
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero__image {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+
+    .hero__title {
+        font-size: var(--size-5xl);
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero__image {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+
+    .hero__title {
+        font-size: var(--size-6xl);
+    }
+
+    .hero__description1,
+    .hero__description2,
+    .hero__btn {
+        font-size: var(--size-lg);
+    }
+
+    .hero > * + * {
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,71 @@
+.cta {
+    text-align: center;
+}
+
+.cta > * + * {
+    margin-top: 1rem;
+}
+
+.cta__image {
+    width: var(--size-9xl);
+    height: var(--size-9xl);
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+.cta__title {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cta__description {
+    font-family: var(--font-secondary);
+    font-size: 1.75rem;
+    color: var(--color-muted);
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+.cta__form {
+    font-size: 1.75rem;
+}
+
+.cta__btn {
+    font-size: var(--size-sm);
+}
+
+.cta__arrow {
+    display: inline;
+    width: 1em;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+
+@media (min-width: 475px) {
+    .cta__image {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+    
+    .cta__btn {
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 1280px) {
+    .cta > * + * {
+        margin-top: 2rem;
+    }
+
+    .cta__image {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    
+    .cta__btn {
+        font-size: var(--size-lg);
+    }
+}

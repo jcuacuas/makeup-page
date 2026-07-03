@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/modern normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/gallery.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <title>Gallery</title>
+    <meta name="description" content="Makeup Artist" />
+    <meta name="keywords" content="css, javascript, reactjs, nextjs" />
+    <meta name="author" content="Cuacuas" />
+</head>
+<body>
+	<header class="header">
+        <div class="header__title-container">
+            <img src="./public/image0-transparent.jpeg" style="width: 80px;">
+            <!-- <span class="header__title"> AGM </span> -->
+        </div>
+        <button class="header__bars" aria-label="menu button">
+            <svg 
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+        <nav class="header__menu">
+            <a href="./index.html" class="header__nav-link inverted-text-color">Home</a>
+            <a href="./index.html#testimonials" class="header__nav-link inverted-text-color">Testimonials</a>
+            <a href="./gallery.html" class="header__nav-link inverted-text-color">Gallery</a>
+            <a href="./booking.html" class="header__nav-link inverted-text-color">Services</a>
+            <a href="./inquiry.html" class="header__nav-link inverted-text-color">Inquiry</a>
+            <div class="header__seperator inverted-text-color"></div>
+            <div class="header__social-container">
+                <a 
+                title="youtube"
+                aria-label="youtube link"
+                href="https://www.instagram.com/agmmakeupartistry/" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social inverted-text-color">
+                <i aria-hidden="true" class="lni lni-instagram"></i>
+                </a>  
+            </div>
+            <div class="header__social-container">
+                <a 
+                title="tiktok"
+                aria-label="tiktok link"
+                href="https://www.tiktok.com/@abileneemarin" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social inverted-text-color">
+                <i aria-hidden="true" class="lni lni-tiktok"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+	<main>
+		<section class="gallery__container">
+			<div>
+				<h1 class="gallery__title">Gallery</h1>
+				<p class="gallery__description">A glimpse into my artistry and the glam magic I love creating.</p>
+			</div>
+			<h1 class="gallery__section-title">Natural Glam</h1>
+            <div class="gallery__grid section" id="naturalGrid">
+                <!-- Images appended here by source/gallery.js -->
+            </div>
+			<h1 class="gallery__section-title">Soft Glam</h1>
+            <div class="gallery__grid section" id="softGrid">
+                <!-- Images from ./public/soft appended here -->
+            </div>
+			<h1 class="gallery__section-title">Bridal Glam</h1>
+            <div class="gallery__grid section" id="bridalGrid">
+                <!-- Images for Bridal Glam will be appended here -->
+            </div>
+			<h1 class="gallery__section-title">Full Glam</h1>
+            <div class="gallery__grid section" id="fullGrid">
+                <!-- Images for Full Glam appended here -->
+            </div>
+			<h1 class="gallery__section-title">Artistry Glam</h1>
+            <div class="gallery__grid section" id="artistryGrid">
+                <!-- Images for Artistry Glam appended here -->
+            </div>
+			<h1 class="gallery__section-title">Client Photos</h1>
+            <div class="gallery__grid section" id="clientGrid">
+                <!-- Images for Client Photos appended here -->
+            </div>
+		</section>
+
+        <footer class="container section">
+            <p class="footer__description">
+            ~Makeup By Abilene~
+            </p>
+        </footer>
+
+		<script src="source/gallery.js"></script>
+	</main>
+</body>
+</html>

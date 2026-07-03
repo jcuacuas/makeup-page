@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/modern normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="./styles/components/header.css">
+	<link rel="stylesheet" href="./styles/components/booking.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <title>Inquiry</title>
+    <meta name="description" content="Makeup Artist" />
+    <meta name="keywords" content="css, javascript, reactjs, nextjs" />
+    <meta name="author" content="Cuacuas" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__title-container">
+            <img src="./public/image0-transparent.jpeg" style="width: 80px;">
+            <!-- <span class="header__title"> AGM </span> -->
+        </div>
+        <button class="header__bars" aria-label="menu button">
+            <svg 
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+        <nav class="header__menu">
+            <a href="./index.html" class="header__nav-link inverted-text-color">Home</a>
+            <a href="./index.html#testimonials" class="header__nav-link inverted-text-color">Testimonials</a>
+            <a href="./gallery.html" class="header__nav-link inverted-text-color">Gallery</a>
+            <a href="./booking.html" class="header__nav-link inverted-text-color">Services</a>
+            <a href="./inquiry.html" class="header__nav-link inverted-text-color">Inquiry</a>
+            <div class="header__seperator inverted-text-color"></div>
+            <div class="header__social-container">
+                <a 
+                title="youtube"
+                aria-label="youtube link"
+                href="https://www.instagram.com/agmmakeupartistry/" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social inverted-text-color">
+                <i aria-hidden="true" class="lni lni-instagram"></i>
+                </a>  
+            </div>
+            <div class="header__social-container">
+                <a 
+                title="tiktok"
+                aria-label="tiktok link"
+                href="https://www.tiktok.com/@abileneemarin" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social inverted-text-color">
+                <i aria-hidden="true" class="lni lni-tiktok"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="booking__title">Booking</h1>
+            <div class="inquiry__seperator-container">
+                <div class="inquiry__seperator"></div>
+                <div class="inquiry__symbol"></div>
+                <div class="inquiry__seperator"></div>
+            </div>
+            <div class="hero__container">
+                <div class="booking__container">
+                    <p class="booking__agreement-title">
+                        <strong>Agreement Requirements -</strong>
+                        To proceed with your booking, you must agree to the following terms. If you do not agree, please refrain from sending a deposit.
+                    </p>
+                    <p class="booking__agreement-title">
+                        <strong>Deposits & Payments -</strong>
+                        Deposit is non-refundable. Deposit can be transferred once with 48+ hours notice. Cash and card accepted. Remaining balance due on appointment day.
+                    </p>
+                    <p class="booking__agreement-title">
+                        <strong>Appointment Day -</strong>
+                        I always recommend to arrive with a clean, freshly washed/shaved face. There’s no price difference if you’re wearing lash extensions, or bring your own lashes. 
+                        I may request reference photos. I may request permission to take photos for media purposes. You are always free to decline—your comfort is my priority. 
+                        Please arrive on time. If I’m traveling to you, please confirm the location beforehand.
+                    </p>
+                    <p class="booking__agreement-title">
+                        <strong>Rescheduling & Cancellations -</strong>
+                        More than 48 hours: Reschedule using the same deposit. Less than 24 hours: $40 cancellation fee. No-call/no-show = future bookings declined. 
+                        If I must cancel due to an emergency, your deposit will be fully refunded
+                    </p>
+                    <p class="booking__agreement-title">
+                        <strong>Liability -</strong>
+                        Each client is responsible for informing AGM Makeup of any skin conditions, allergies, or sensitivities prior to receiving services.
+                        AGM Makeup / Artist cannot be held liable for any allergic reactions, injuries, or damages resulting from the use or application of makeup products.
+                        By booking, the client accepts full responsibility for any reactions or concerns related to the makeup applications
+                    </p>
+                </div>
+                <img class="agreement__img" src="public/booking/photo-output_1.jpeg">
+            </div>
+            <h1 class="booking__title">Services</h1>
+            <div class="inquiry__seperator-container">
+                <div class="inquiry__seperator"></div>
+                <div class="inquiry__symbol"></div>
+                <div class="inquiry__seperator"></div>
+            </div>
+            <div class="booking__grid-container">
+                <div class="booking__option-container">
+                    <div>
+                        <img class="booking__img" src="./public/booking/photo-output_3.jpeg">
+                    </div>
+                    <div class="booking__title-container">
+                        <h1 class="booking__option-title">Natural Glam</h1>
+                        <a href="https://app.squareup.com/appointments/buyer/widget/dw4e8ttsojlb9n/L6S7NKJ559TN7" target="_blank"><button class="booking__option-select">Select</button></a>
+                    </div>
+                    <div class="booking__description-container">
+                        <p class="booking__description">
+                            Effortlessly beautiful and timeless. Perfect for clients who want a fresh, polished look that enhances their natural features without feeling overly madeup.
+                            This service includes soft eye makeup, perfection, lashes, and a radiant finish that feels like the best version of you.
+                        </p>
+                        <div class="booking__price-container">
+                            <p class="booking__price">$85</p>
+                            <p class="booking__duration">45min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking__option-container">
+                    <div>
+                        <img class="booking__img" src="./public/booking/photo-output.jpg">
+                    </div>
+                    <div class="booking__title-container">
+                        <h1 class="booking__option-title">Soft Glam</h1>
+                        <a href="https://app.squareup.com/appointments/buyer/widget/3clqhq9lr2wdwe/L6S7NKJ559TN7" target="_blank"><button class="booking__option-select">Select</button></a>
+                    </div>
+                    <div class="booking__description-container">
+                        <p class="booking__description">The perfect balance between natural and glamorous. Soft Glam features beautifully blended eyeshadow, flawless
+                            skin, medium to full coverage base, lashes, and subtle definition to create an elevated look that's perfect for photoshoots, special events, date nights, and celebrations.
+                        </p>
+                        <div class="booking__price-container">
+                            <p class="booking__price">$100</p>
+                            <p class="booking__duration">60min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking__option-container">
+                    <div>
+                        <img class="booking__img" src="./public/booking/photo-output_4.jpeg">
+                    </div>
+                    <div class="booking__title-container">
+                        <h1 class="booking__option-title">Full Glam</h1>
+                        <a href="https://app.squareup.com/appointments/buyer/widget/fp96ojwc8y4zq3/L6S7NKJ559TN7" target="_blank"><button class="booking__option-select">Select</button></a>
+                    </div>
+                    <div class="booking__description-container">
+                        <p class="booking__description">Bold, glamorous, and made to stand out. Perfect for those who love a more intense 
+                            glamour-filled makeup look. This service includes detailed and elevated eye makeup, a flawless full-coverage 
+                            complexion, brightened under-eyes, lashes, and enhanced definition to beautifully highlight your features. 
+                            Ideal for weddings, quinceneras, photoshoots, special events, or any ocassion where you want to look stunning, feel confident and turn heads.
+                        </p>
+                        <div class="booking__price-container">
+                            <p class="booking__price">$115</p>
+                            <p class="booking__duration">90min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking__option-container">
+                    <div>
+                        <img class="booking__img" src="./public/booking/photo-output_2.jpeg">
+                    </div>
+                    <div class="booking__title-container">
+                        <h1 class="booking__option-title">Artistry Glam</h1>
+                        <a href="https://app.squareup.com/appointments/buyer/widget/r2cy7jhikk4u1z/L6S7NKJ559TN7" target="_blank"><button class="booking__option-select">Select</button></a>
+                    </div>
+                    <div class="booking__description-container">
+                        <p class="booking__description">Perfect for those looking for a more elevated, creative makeup look. Artistry Glam is designed to with
+                            advanced techniques, bold color, detailed blending, and customized artistry to bring your vision to life. Whether you're inspires by
+                            editorial beauty, soft creative glam, vibrant colors, graphic liner, or a unique concept, each look is tailored specifically to you.
+
+                        </p>
+                        <div class="booking__price-container">
+                            <p class="booking__price">$175</p>
+                            <p class="booking__duration">2-3 hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class__option-container">
+                <img class="class__img" src="./public/booking/photo-output.JPEG">
+                <div class="class__description-container">
+                    <div class="class__title-container">
+                        <h1 class="class__title">1 on 1 Class</h1>
+                        <div class="class__price-container">
+                            <p class="booking__price">$250</p>
+                            <p class="booking__duration">3 hrs</p>
+                        </div>
+                    </div>
+                    <p class="class__description">
+                        A private, hands-on makeup lesson designed for beginners who want to confidently learn the basics and build a flawless everyday routine. <br>
+                        <strong>In this 3-hour class, you will learn:</strong>
+                    </p>
+                        <ul class="class__items">
+                            <li>
+                                Understanding skin undertones and how to choose the right shades
+                            </li>
+                            <li>
+                                Color theory made simple
+                            </li>
+                            <li>
+                                Proper skin preparation and product placement
+                            </li>
+                            <li>
+                                How to create a flawless everyday glam look
+                            </li>
+                            <li>
+                                Blending techniques and makeup fundamentals
+                            </li>
+                            <li>
+                                Brush knowledge and product recommendations
+                            </li>
+                            <li>
+                                Tips and tricks tailored to your unique features
+                            </li>
+                        </ul>
+                    <p class="class__description">
+                        <strong>What’s Included:</strong>
+                    </p>
+                        <ul class="class__items">
+                            <li>
+                                3-hour private lesson
+                            </li>
+                            <li>
+                                Step-by-step guided application
+                            </li>
+                            <li>
+                                Customized makeup tips and routine building
+                            </li>
+                            <li>
+                                Product and brush recommendations provided for your skin type
+                            </li>
+                            <li>
+                                Q&A and personalized feedback
+                            </li>
+                        </ul>
+                    <p class="class__description">
+                        <strong>Student Requirement:</strong>
+                        Students only need to let me know if they have oily, combination or dry skin. I will provide a recommended product 
+                        list tailored to their skin type. This package does include a brush set that will definitely work for you. They should bring their current makeup so we can review what 
+                        they already own and build a routine together.
+                    </p>
+                        <a href="https://app.squareup.com/appointments/buyer/widget/5w330m21f3pkrv/L6S7NKJ559TN7" target="_blank">
+                            <button class="booking__option-select">Select</button>
+                        </a>
+                </div>
+            </div>
+        </section>
+        <footer class="container section">
+        <p class="footer__description">
+            ~Makeup By Abilene~
+        </p>
+        </footer>
+    </main>
+        <script>
+        // Reveal booking images when they scroll into view (staggered)
+        document.addEventListener('DOMContentLoaded', function () {
+            const imgs = document.querySelectorAll('.booking__img, .agreement__img, .class__img')
+            if (!imgs || imgs.length === 0) return
+            const io = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return
+                    const img = entry.target
+                    const order = Number(img.dataset.revealOrder) || 0
+                    // Remove stagger for class__img so these reveal immediately
+                    if (img.classList.contains('class__img')) {
+                        img.style.transitionDelay = '0ms'
+                    } else {
+                        const delay = Math.min(order * 80, 800)
+                        img.style.transitionDelay = `${delay}ms`
+                    }
+                    img.classList.add('in-view')
+                    obs.unobserve(entry.target)
+                })
+            }, { rootMargin: '0px 0px 120px 0px', threshold: 0.08 })
+
+            imgs.forEach((img, i) => {
+                img.dataset.revealOrder = i
+                io.observe(img)
+            })
+        })
+        </script>
+</body>

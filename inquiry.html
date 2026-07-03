@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/modern normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="./styles/components/header.css">
+	<link rel="stylesheet" href="./styles/components/inquiry.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <title>Inquiry</title>
+    <meta name="description" content="Makeup Artist" />
+    <meta name="keywords" content="css, javascript, reactjs, nextjs" />
+    <meta name="author" content="Cuacuas" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__title-container">
+            <img src="./public/image0-transparent.jpeg" style="width: 80px;">
+            <!-- <span class="header__title"> AGM </span> -->
+        </div>
+        <button class="header__bars" aria-label="menu button">
+            <svg 
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+        <nav class="header__menu">
+            <a href="./index.html" class="header__nav-link">Home</a>
+            <a href="./index.html#testimonials" class="header__nav-link">Testimonials</a>
+            <a href="./gallery.html" class="header__nav-link">Gallery</a>
+            <a href="./booking.html" class="header__nav-link">Services</a>
+            <a href="./inquiry.html" class="header__nav-link">Inquiry</a>
+            <div class="header__seperator"></div>
+            <div class="header__social-container">
+                <a 
+                title="youtube"
+                aria-label="youtube link"
+                href="https://www.instagram.com/agmmakeupartistry/" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social">
+                <i aria-hidden="true" class="lni lni-instagram"></i>
+                </a>  
+            </div>
+            <div class="header__social-container">
+                <a 
+                title="tiktok"
+                aria-label="tiktok link"
+                href="https://www.tiktok.com/@abileneemarin" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social">
+                <i aria-hidden="true" class="lni lni-tiktok"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="site-container">
+        <div class="background-image-container">
+        </div>
+        <h1 class="inquiry__title">Inquiry</h1>
+        <div class="inquiry__seperator-container">
+            <div class="inquiry__seperator"></div>
+            <div class="inquiry__symbol"></div>
+            <div class="inquiry__seperator"></div>
+        </div>
+        <p class="inquiry__description">
+            Thank you for considering AGM Makeup Artistry for your special event. 
+            I am truly honored to be considered as your makeup artist and look forward to learning more about your vision. 
+            Please complete the inquiry form below, and I will be in touch within 24–48 hours regarding availability and booking details.
+        </p>
+        <p class="inquiry__description-additional">
+            <strong>Note:</strong> For parties of 2 or more clients, please include the total number of people in your inquiry. 
+            Larger groups may require additional timing and early start scheduling to ensure each glam is completed flawlessly and on time.
+        </p>
+        <form class="inquiry__form" action="https://formspree.io/f/xbdvaeze" method="POST">
+            <label class="label--0margin" for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="contact information">How would you like to be contacted?:</label>
+            <select id="contact information" name="contact information" required>
+                <option value="">Select an option</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+
+            <label for="Date Of Services">Event Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="type of event">Occasion:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="location">Location:</label>
+            <textarea id="location" name="location" required></textarea>
+
+            <label for="Am I traveling to you?">Will you need travel services?:</label>
+            <select id="Am I traveling to you?" name="Am I traveling to you?" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="time">What time would you like all makeup services completed by?:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="amount of people">How many people will need my makeup services?:</label>
+            <input type="number" id="amount of people" name="amount of people" min="1" >
+
+            <label for="hairstylist arrival time">Hairstylist arrival time:</label>
+            <input type="time" id="hairstylist arrival time" name="hairstylist arrival time">
+
+            <label for="photographer arrival time">Photographer arrival time:</label>
+            <input type="time" id="photographer arrival time" name="photographer arrival time">
+
+            <label for="additional photographer questions">Would you like to be ready before the photographer arrives?:</label>
+            <select id="additional photographer questions" name="additional photographer questions">
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="would you like to schedule a consultation">Would you like to book a consultation?:</label>
+            <select id="would you like to schedule a consultation" name="would you like to schedule a consultation" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="best time to reach you">Best time to reach you:</label>
+            <select id="best time to reach you" name="best time to reach you" required>
+                <option value="">Select an option</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+
+            <button type="submit" class="btn header__enter-app-btn">Submit Inquiry
+                <svg  aria-hidden="true" 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" fill="currentColor" 
+                class="header__enter-app-btn__arrow">
+                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 
+                    7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 
+                    0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <p class="inquiry__footer-description"> 
+                This is only for a consultation. Booking is only confirmed once a deposit is received and a confirmation email is sent.
+                Thank you Love.
+            </p>
+
+            <p class="inquiry__footer-description-additional"> 
+                -Abilene 
+            </p>
+
+        </form>
+        <div class="background-image-container-footer">
+        </div>
+    </main>
+</body>
+</html>

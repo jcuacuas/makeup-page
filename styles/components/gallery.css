@@ -1,0 +1,70 @@
+.gallery__container {
+    padding: 8rem 1rem 0;
+}
+
+.gallery__title {
+    line-height: 1;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.gallery__description {
+    font-size: 1.75rem;
+    color: var(--color-muted);
+    font-family: var(--font-secondary);
+    text-align: right;
+    margin: 2.75rem auto;
+    text-align: center;
+    width: 33ch;
+}
+
+.gallery__section-title {
+    margin: 2.75rem auto;
+    text-align: center;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-size: 4rem;
+    width: fit-content;
+    border-top: 3px solid var(--color-slate300);
+    border-bottom: 3px solid var(--color-slate300);
+    padding: 30px;
+}
+
+/* Responsive gallery grid for all viewport sizes */
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, 400px);
+    grid-auto-flow: dense;
+    gap: 0.5rem;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* stretch to fill without distortion */
+    display: block;
+    flex: 1 1 auto;
+    border-radius: 6px;
+
+    /* start hidden & slightly translated for reveal */
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 650ms cubic-bezier(.22,.9,.36,1), transform 650ms cubic-bezier(.22,.9,.36,1);
+    will-change: opacity, transform;
+}
+
+/* Reveal state: when JS adds both classes the image fades up */
+.gallery__item img.in-view.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery__item--broken img {
+    opacity: 1;
+    filter: grayscale(1) contrast(.9);
+}
