@@ -76,13 +76,10 @@
 
     <!-- Mobile Navigation -->
     <div class="mobile-nav">
-        <button class="mobile-nav__close-btn">Close</button>
-        <img 
-        src="./public/logo.png" 
-        alt="Girl holding a cup of coffee" 
-        width="720" 
-        height="972" 
-        class="mobile-nav__logo" />
+            <a href="./index.html" class="header__nav-link">Home</a>
+            <a href="./gallery.html" class="header__nav-link">Gallery</a>
+            <a href="./booking.html" class="header__nav-link">Services</a>
+            <a href="./inquiry.html" class="header__nav-link">Inquiry</a>
         <div class="mobile-nav__social-container">
             <a 
             title="github"
@@ -126,6 +123,9 @@
     </div>
     <main>
         <section class="hero">
+            <div class="mobile-slide">
+            </div>
+        
         <div class="slideshow-container">
         <div class="mySlides fade">
             <img src="./public/index/image1.jpeg" style="width:100%; object-position: 0 -150px;">
@@ -148,7 +148,7 @@
         </div>
         
         <div class="mySlides fade">
-            <img src="./public/index/image10.jpeg" style="width:100%; object-position: 0 -1900px;">
+            <img src="./public/index/image10.jpeg" style="width:100%; object-position: 0 -1000px;">
         </div>
 
         <div class="mySlides fade">
@@ -268,5 +268,6 @@
         </p>
     </footer>
     <script src="./source/app.js" type="module"></script>
+    <script src="./source/utils/mobileNav.js" type="module"></script>
 </body>
 </html>

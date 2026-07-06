@@ -1,13 +1,29 @@
 const mobileNav = () => {
-    const headerBars = document.querySelector(".header__bars");
+    const headerButton = document.querySelector(".header__bars");
     const mobileNav = document.querySelector(".mobile-nav");
-    const closeButton = document.querySelector(".mobile-nav__close-btn");
+    const mobileLinks = document.querySelectorAll(".mobile-nav__link");
 
-    const openNav = () => {mobileNav.style.display = "flex"}
-    const closeNav = () => {mobileNav.style.display = "none"}
+    // state
+    let isMobileNavOpen = false;
+    
+    headerButton.addEventListener("click", () => {
+        isMobileNavOpen = !isMobileNavOpen;
+        if (isMobileNavOpen) {
+            mobileNav.style.display = "flex";
+            document.body.style.overflowY = "hidden";
+        } else {
+            mobileNav.style.display = "none";
+            document.body.style.overflowY = "auto";
+        }
+    });
 
-    headerBars.addEventListener("click", openNav);
-    closeButton.addEventListener("click", closeNav);
-};
+    mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            isMobileNavOpen = false;
+            mobileNav.style.display = "none";
+            document.body.style.overflowY = "auto";
+        });
+    });
+}
 
 export default mobileNav;
