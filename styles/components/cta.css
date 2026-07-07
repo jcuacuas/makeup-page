@@ -43,10 +43,20 @@
     margin-left: 0.25rem;
 }
 
+.header__enter-app-btn__arrow {
+    width: 1em;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
 
 @media (max-width: 767px) {
     .cta {
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
     }
 
     .cta__title {
@@ -59,9 +69,10 @@
     }
 
     .cta .btn {
-        display: block;
-        width: 100%;
-        text-align: center;
+        display: flex;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
     }
 }
 

@@ -122,7 +122,7 @@
 
 @media (max-width: 767px) {
     .hero {
-        min-height: 100svh;
+        min-height: 70svh;
         padding-top: 4.5rem;
     }
 

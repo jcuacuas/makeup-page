@@ -8,6 +8,7 @@
 
 .about__item1 {
     margin-bottom: 2rem;
+    max-width: 70ch;
 }
 
 .about__container2 {
@@ -35,14 +36,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.about__description1 {
+.about__description {
     font-size: 1.75rem;
     color: var(--color-muted);
     font-family: var(--font-secondary);
-}
-
-.about__description2 {
-    font-size: var(--size-sm);
 }
 
 .about__description3 {
@@ -158,8 +155,7 @@
         text-align: left;
     }
 
-    .about__description1,
-    .about__description2,
+    .about__description,
     .about__description3 {
         font-size: 1rem;
         text-align: left;

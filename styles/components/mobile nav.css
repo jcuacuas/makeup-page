@@ -13,6 +13,10 @@
     gap: 1rem;
 }
 
+.mobile-nav a {
+    text-decoration: none;
+}
+
 .mobile-nav__logo {
     width: var(--size-7xl);
     height: var(--size-7xl);
