@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 	<link rel="stylesheet" href="./styles/components/header.css">
 	<link rel="stylesheet" href="./styles/components/inquiry.css">
+    <link rel="stylesheet" href="./styles/components/mobile nav.css">
     <link rel="stylesheet" href="./styles/utils.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
     <title>Inquiry</title>
@@ -65,6 +66,36 @@
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+            <a href="./index.html" class="header__nav-link">Home</a>
+            <a href="./gallery.html" class="header__nav-link">Gallery</a>
+            <a href="./booking.html" class="header__nav-link">Services</a>
+            <a href="./inquiry.html" class="header__nav-link">Inquiry</a>
+        <div class="mobile-nav__seperator"></div>
+        <div class="mobile-nav__social-container">
+            <a 
+            title="tiktok"
+            aria-label="tiktok link"
+            href="https://www.tiktok.com/@abileneemarin" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile__social">
+            <i aria-hidden="true" class="lni lni-tiktok"></i>
+            </a>
+            <a 
+            title="instagram"
+            aria-label="instagram link"
+            href="https://www.instagram.com/agmmakeupartistry/" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile__social">
+            <i aria-hidden="true" class="lni lni-instagram"></i>
+            </a>  
+        </div>
+    </div>
+
     <main class="site-container">
         <div class="background-image-container">
         </div>
@@ -79,19 +110,19 @@
             I am truly honored to be considered as your makeup artist and look forward to learning more about your vision. 
             Please complete the inquiry form below, and I will be in touch within 24–48 hours regarding availability and booking details.
         </p>
-        <p class="inquiry__description-additional">
+        <p class="inquiry__description">
             <strong>Note:</strong> For parties of 2 or more clients, please include the total number of people in your inquiry. 
             Larger groups may require additional timing and early start scheduling to ensure each glam is completed flawlessly and on time.
         </p>
         <form class="inquiry__form" action="https://formspree.io/f/xaqgajyv" method="POST">
             <label class="label--0margin" for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" autocomplete="given-name" required>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto">
+            <input type="email" id="email" name="_replyto" autocomplete="email" >
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" autocomplete="mobile" required>
             
             <label for="contact information">How would you like to be contacted?:</label>
             <select id="contact information" name="contact information" required>
@@ -100,11 +131,11 @@
                 <option value="phone">Phone</option>
             </select>
 
-            <label for="Date Of Services">Event Date:</label>
+            <label for="date">Event Date:</label>
             <input type="date" id="date" name="date" required>
 
             <label for="type of event">Occasion:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="type of event" name="type of event" required></textarea>
 
             <label for="location">Location:</label>
             <textarea id="location" name="location" required></textarea>
@@ -174,5 +205,9 @@
         <div class="background-image-container-footer">
         </div>
     </main>
+    <script type="module">
+        import mobileNav from "./source/utils/mobileNav.js";
+        mobileNav();
+    </script>
 </body>
 </html>
