@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./styles/components/header.css">
     <link rel="stylesheet" href="./styles/components/gallery.css">
     <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/components/mobile nav.css">
     <link rel="stylesheet" href="./styles/utils.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
     <title>Gallery</title>
@@ -66,6 +67,35 @@
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+            <a href="./index.html" class="header__nav-link">Home</a>
+            <a href="./gallery.html" class="header__nav-link">Gallery</a>
+            <a href="./booking.html" class="header__nav-link">Services</a>
+            <a href="./inquiry.html" class="header__nav-link">Inquiry</a>
+        <div class="mobile-nav__seperator"></div>
+        <div class="mobile-nav__social-container">
+            <a 
+            title="tiktok"
+            aria-label="tiktok link"
+            href="https://www.tiktok.com/@abileneemarin" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile__social">
+            <i aria-hidden="true" class="lni lni-tiktok"></i>
+            </a>
+            <a 
+            title="instagram"
+            aria-label="instagram link"
+            href="https://www.instagram.com/agmmakeupartistry/" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile__social">
+            <i aria-hidden="true" class="lni lni-instagram"></i>
+            </a>  
+        </div>
+    </div>
 	<main>
 		<section class="gallery__container">
 			<div>
@@ -105,6 +135,10 @@
         </footer>
 
 		<script src="source/gallery.js"></script>
+        <script type="module">
+        import mobileNav from "./source/utils/mobileNav.js";
+        mobileNav();
+        </script>
 	</main>
 </body>
 </html>
