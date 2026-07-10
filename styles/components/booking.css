@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .booking__title {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 8rem;
@@ -131,7 +135,7 @@
 
 .booking__option-select {
     padding: 12px 60px;
-    margin-top: 1rem;
+    margin: 1rem auto;
     font-weight: 700;
     border-radius: 30px;
     border: 1px solid black;
@@ -180,6 +184,7 @@
 .class__title {
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .class__price-container {
@@ -205,6 +210,7 @@
 .class__items {
     list-style-position: inside;
     font-size: var(--size-xl);
+    margin-left: 10px;
 }
 
 .booking__price, 
@@ -245,4 +251,143 @@
 .class__img--broken {
     opacity: 1;
     filter: grayscale(1) contrast(.95);
+}
+
+@media (max-width: 1100px) {
+    .booking__title {
+        padding-top: 6rem;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+
+    .booking__container {
+        width: 65ch;
+    }
+
+    .hero__container {
+        flex-direction: column-reverse;
+        width: min(100%, 900px);
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    .booking__agreement-title {
+        width: 100%;
+        font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+    }
+
+    .booking__grid-container {
+        gap: 2.5rem;
+    }
+
+    .booking__option-select {
+        display: block;
+    }
+
+    .agreement__img {
+        width: min(100%, 420px);
+        height: auto;
+    }
+
+    .class__option-container {
+        flex-direction: column;
+        align-items: center;
+        width: min(90%, 900px);
+    }
+
+    .class__img {
+        width: min(100%, 420px);
+        height: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    .booking__title {
+        padding-top: 5rem;
+        font-size: clamp(2.4rem, 8vw, 3.5rem);
+        letter-spacing: 0.2em;
+    }
+
+    .booking__container {
+        width: 40ch;
+    }
+
+    .booking__grid-container {
+        gap: 2.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .booking__option-container {
+        width: min(100%, 420px);
+        height: auto;
+    }
+
+    .booking__title-container,
+    .class__title-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .class__option-container {
+        margin: 2rem auto 1rem;
+    }
+
+    .booking__option-select {
+        padding: 10px 32px;
+    }
+
+    .booking__description,
+    .class__description,
+    .class__items {
+        font-size: 1rem;
+    }
+
+    .booking__price-container {
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        justify-content: center;
+    }
+
+    .class__description-container {
+        max-width: 50ch;
+    }
+}
+
+@media (max-width: 475px) {
+    .inquiry__symbol {
+        width: 100px;
+    }
+
+    .inquiry__symbol:before,
+    .inquiry__symbol:after {
+      top: 40px;
+      left: 27px;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #cbd5e1;
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+
+    .inquiry__symbol:after {
+      left: auto;
+      right: 30px;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+    }
+
+    .booking__container {
+        width: 90%;
+    }
+    
+    .agreement__img {
+        width: min(90%, 300px);
+        height: auto;
+    }
+
+    .booking__grid-container {
+        margin: 0 1rem;
+    }
 }
