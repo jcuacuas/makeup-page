@@ -21,8 +21,7 @@
     width: var(--size-7xl);
     height: var(--size-7xl);
     object-fit: cover;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-radius: 50%;
 }
 
 .mobile-nav__social-container {
