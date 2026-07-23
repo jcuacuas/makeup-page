@@ -23,15 +23,16 @@
 }
 
 .gallery__section-title {
-    margin: 2.75rem auto;
+    margin: 2.75rem auto 0;
     text-align: center;
     font-family: "Pinyon Script", cursive;
     font-weight: 400;
     font-size: 4rem;
     width: fit-content;
+    //* pink border syling
     border-top: 3px solid var(--color-slate300);
     border-bottom: 3px solid var(--color-slate300);
-    padding: 30px;
+    padding: 30px; *//
 }
 
 /* Responsive gallery grid for all viewport sizes */
@@ -87,8 +88,6 @@
 
     .gallery__section-title {
         font-size: clamp(2.25rem, 4.8vw, 3rem);
-        padding: 1.1rem 1.5rem;
-        margin: 2rem auto;
     }
 
     .gallery__grid {
@@ -115,8 +114,6 @@
 
     .gallery__section-title {
         font-size: 1.8rem;
-        padding: 0.8rem 1rem;
-        margin: 1.5rem auto;
     }
 
     .gallery__grid {
