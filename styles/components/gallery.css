@@ -123,3 +123,14 @@
         gap: 0.5rem;
     }
 }
+
+@media (min-width: 768px) {
+    .gallery__grid {
+        margin-top: 2rem;
+    }
+
+    .gallery__section-title {
+        top: 0;
+        margin: 2rem auto 0;
+    }
+}
