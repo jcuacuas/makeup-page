@@ -23,7 +23,9 @@
 }
 
 .gallery__section-title {
-    margin: 2.75rem auto 0;
+    margin-inline: auto;
+    position: relative;
+    top: 20px;
     text-align: center;
     font-family: "Pinyon Script", cursive;
     font-weight: 400;
@@ -87,7 +89,7 @@
     }
 
     .gallery__section-title {
-        font-size: clamp(2.25rem, 4.8vw, 3rem);
+        font-size: 3rem;
     }
 
     .gallery__grid {
@@ -113,7 +115,7 @@
     }
 
     .gallery__section-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .gallery__grid {
